@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">BePlay</a>
+        </header>
+        <!-- <nav>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/menu.svg" alt="menu">
+        </nav> -->
+        <h1 class="lax" data-lax-translate-y="0 0, 400 -400">
+            “Hard <b>work</b> beats talent when talent <b>doesn't</b> work hard.”
+        </h1>
+        <div class="line lax" data-lax-opacity="0 1, 100 0">
+        </div>
+
+    </div>
+    <div class="container secondary lax" data-lax-translate-y="0 0, 400 -400" data-lax-opacity="0 0, 300 1">
+        <h2>What</h2>
+        <p class="subtext">Is Beplay?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequatur dolor expedita quasi,
+            perferendis, explicabo quis earum debitis magni, deleniti praesentium quo facilis molestias non consequuntur
+            perspiciatis! Nam, excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequatur dolor expedita quasi,
+            perferendis, explicabo quis earum debitis magni, deleniti praesentium quo facilis molestias non consequuntur
+            perspiciatis! Nam, excepturi.</p>
+    </div>
+    <div class="container third lax" data-lax-translate-y="0 0, 400 -400" data-lax-opacity="0 0, 300 1">
+        <h2>Strategic</h2>
+        <p class="subtext">Alliances</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequatur dolor expedita quasi,
+            perferendis, explicabo quis earum debitis magni, deleniti praesentium quo facilis molestias non consequuntur
+            perspiciatis! Nam, excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga consequatur dolor expedita quasi,
+            perferendis, explicabo quis earum debitis magni, deleniti praesentium quo facilis molestias non consequuntur
+            perspiciatis! Nam, excepturi.</p>
+    </div>
+    <!-- Form dari Codepen.io -->
+    <div class="container form">
+
+        <h1>Ayo jadi sobat bePlay</h1>
+
+        <!-- <form name="UserId" netlify action="/" method="POST" data-netlify="true">
+            <div class="field-wrap">
+                <input type="text" placeholder="Nama" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+                <input type="email" placeholder="Email" required autocomplete="off" />
+            </div>
+            <button type="submit" class="button button-block" />Get Started</button>
+        </form>
+    </div> -->
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label class="field-wrap">Nama: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label class="field-wrap">Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <button type="submit" class="button button-block">submit</button>
+            </p>
+        </form>
+        <!-- End dari Forms -->
+
+    </div>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/mountains.png" alt="mountains" class="mountains lax"
+        data-lax-translate-y="0 1, 400 -100">
+    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/forest.png" alt="trees" class="trees lax"
+        data-lax-translate-y="0 1, 400 -240"> -->
+    <img src="images/ball.png" alt="trees" class="trees lax" data-lax-translate-y="0 350, 400 0">
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+
+</body>
+
+</html>
